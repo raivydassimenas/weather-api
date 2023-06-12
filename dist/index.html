@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <h1>Test</h1>
-    <script src="./bundle.js"></script>
+    <div class="container">
+        <div class="form-container">
+            <h1>Weather API</h1>
+            <form action="./weather" method="post" id="weather">
+                <input type="text" name="location" id="location">
+                <input type="submit">
+            </form>
+        </div>
+        <div id="weather-data"></div>
+        <script src="./bundle.js"></script>
+    </div>
 </body>
 </html>
